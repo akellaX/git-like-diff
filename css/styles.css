@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+#editor {
+    width: 500px;
+    height: 700px;
+    margin-right: 50px;
+}
+#diff {
+    width: 500px;
+    height: 700px;
+    border: black solid 1px;
+}
+#submit-button {
+    width: 200px;
+    margin-top: 20px;
+    background-color: aqua;
+    font-size: 15px;
+}
+.text-areas {
+    display: flex;
+    flex-direction: row;
+}
+.line {
+    display: flex;
+    flex-direction: row;
+    line-height: 0;
+    padding: 0 5px;
+}
+.red {
+    background-color: #ffeef0;
+}
+.green {
+    background-color: #e6ffed;
+}
+.line-number {
+    font-weight: bold;
+    margin-right: 10px;
+}

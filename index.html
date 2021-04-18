@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="./css/styles.css">
+
+<body>
+    <div class="text-areas">
+        <textarea id='editor' data-bind='textInput: json'> </textarea>
+        <div id='diff' data-bind='foreach: diffArray'>
+            <div class="line">
+                <pre class="line-number" data-bind="text: $index"></pre>
+                <pre class='line-text' data-bind="html: text"></pre>
+            </div>
+        </div>
+    </div>
+    <button id="submit-button" data-bind="click: onSubmit">Submit</button>
+
+    <script type='text/javascript' src='./js/knockout-3.5.1.js'></script>
+    <script type='text/javascript' src='./js/diff_match_patch.js'></script>
+    <script type='text/javascript' src='./js/main.js'></script>
+</body>
+
+</html>
